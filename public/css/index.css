@@ -25,9 +25,11 @@ ul {
 #home {
   position: relative;
   height: 100vh;
-  background: #000; }
+  background: url("/public/img/background.jpg") no-repeat center center/cover; }
   #home .navbar {
-    background: #333; }
+    position: sticky;
+    top: 0;
+    background: rgba(51, 51, 51, 0.75); }
     #home .navbar nav {
       height: 15vh;
       display: flex;
@@ -63,34 +65,39 @@ ul {
       margin: auto auto;
       z-index: 1;
       width: 90%;
-      height: 70%;
+      height: 60%;
       padding: 1rem;
       border-radius: 10px;
-      background: #333;
+      background: rgba(51, 51, 51, 0.75);
       color: #fff;
       font-family: 'Ubuntu Mono', monospace;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       line-height: 1.4; }
-      #home .home-content .terminal .const-color {
+      #home .home-content .terminal .const-color,
+      #home .home-content .terminal .param-color {
         color: #0278ae; }
       #home .home-content .terminal .var-color {
         color: #51adcf; }
       #home .home-content .terminal .obj-name-color {
         color: #b2deec; }
-      #home .home-content .terminal .bracket-color {
+      #home .home-content .terminal .bracket-color,
+      #home .home-content .terminal .func-color {
         color: #fff48f; }
       #home .home-content .terminal .property-color {
-        color: #ffa36c; }
+        color: #df9b6e; }
       #home .home-content .terminal .value-color {
         color: #bbd196; }
     #home .home-content .content {
       display: block;
       margin: auto;
       z-index: 1;
-      height: 70%;
+      height: 60%;
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      background: rgba(51, 51, 51, 0.75);
+      padding: 2rem;
+      border-radius: 10px; }
       #home .home-content .content .personal-img img {
         max-width: 200px; }
       #home .home-content .content a {
@@ -105,7 +112,7 @@ ul {
     content: '';
     position: absolute;
     background: #333;
-    opacity: 0.7;
+    opacity: 0.3;
     width: 100%;
     height: 100%;
     top: 0;
