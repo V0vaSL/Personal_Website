@@ -25,13 +25,13 @@ ul {
 #home {
   position: relative;
   height: 100vh;
-  background: url("/public/img/background.jpg") no-repeat center center/cover; }
+  background: url("/public/img/dell_backlit_keyboard-wallpaper-1920x1080.jpg") no-repeat center center/cover; }
   #home .navbar {
     position: sticky;
     top: 0;
-    background: rgba(51, 51, 51, 0.75); }
+    background: rgba(51, 51, 51, 0.9); }
     #home .navbar nav {
-      height: 15vh;
+      height: 12vh;
       display: flex;
       align-items: center;
       justify-content: space-around; }
@@ -42,7 +42,7 @@ ul {
         display: flex; }
         #home .navbar nav ul li {
           margin-right: 3rem;
-          padding: 1rem 0;
+          padding: 0.7rem 0;
           transition: border-bottom 0.4s ease-out; }
           #home .navbar nav ul li a {
             transition: color 0.4s ease-out; }
@@ -57,7 +57,7 @@ ul {
           color: #fff48f;
           font-size: 1.5rem; }
   #home .home-content {
-    height: 85vh;
+    height: 88vh;
     display: grid;
     grid-template-columns: 2fr 1fr; }
     #home .home-content .terminal {
@@ -68,7 +68,7 @@ ul {
       height: 60%;
       padding: 1rem;
       border-radius: 10px;
-      background: rgba(51, 51, 51, 0.75);
+      background: rgba(51, 51, 51, 0.9);
       color: #fff;
       font-family: 'Ubuntu Mono', monospace;
       font-size: 1.5rem;
@@ -80,7 +80,6 @@ ul {
         color: #51adcf; }
       #home .home-content .terminal .obj-name-color {
         color: #b2deec; }
-      #home .home-content .terminal .bracket-color,
       #home .home-content .terminal .func-color {
         color: #fff48f; }
       #home .home-content .terminal .property-color {
@@ -95,7 +94,7 @@ ul {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: rgba(51, 51, 51, 0.75);
+      background: rgba(51, 51, 51, 0.9);
       padding: 2rem;
       border-radius: 10px; }
       #home .home-content .content .personal-img img {
