@@ -9,19 +9,24 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff; }
+  color: #fff;
+  cursor: pointer; }
 
 p {
   padding: 0.7rem 0;
   line-height: 1.6; }
 
-h1 {
+h1,
+h2 {
   font-family: 'Balsamiq Sans', cursive; }
+
+h2 {
+  font-size: 2.5rem; }
 
 ul {
   list-style: none; }
 
-#home .navbar nav, #home .home-content, #about .cards-container {
+#home .navbar nav, #home .home-content, #about .cards-container, #contact .contact-container {
   max-width: 1100px;
   margin: auto;
   padding: 0 2rem;
@@ -90,8 +95,9 @@ ul {
       flex: 3;
       z-index: 1;
       width: 90%;
+      margin-right: 2rem;
       height: 70%;
-      padding: 1rem;
+      padding: 2rem;
       border-radius: 10px;
       background: rgba(51, 51, 51, 0.9);
       color: #fff;
@@ -138,29 +144,37 @@ ul {
         font-family: 'Balsamiq Sans', cursive; }
         #home .home-content .content a:hover {
           opacity: 0.5; }
+  #home:before {
+    content: '';
+    position: absolute;
+    background: #333;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
 
 #about {
-  padding: 2rem 0;
+  padding: 4rem 0;
   background: #333; }
-  #about h1 {
+  #about h2 {
     color: #80bdab;
     text-align: center;
-    padding: 2rem;
-    font-size: 2rem; }
+    padding: 2rem; }
   #about .cards-container {
     display: grid;
     grid-template-areas: 'education education' 'skills skills' 'experience army'; }
     #about .cards-container .card {
       background: rgba(128, 189, 171, 0.9);
       padding: 1rem;
-      margin: 0.5rem 0;
+      margin: 0.7rem 0;
       border-radius: 10px;
       display: flex;
       align-items: center; }
       #about .cards-container .card i {
         color: #fff;
         padding: 1rem;
-        margin: 0 3rem; }
+        margin: 0 2rem; }
       #about .cards-container .card p {
         padding: 0.5rem;
         font-size: 1.1rem; }
@@ -172,7 +186,66 @@ ul {
       grid-area: experience; }
     #about .cards-container #army {
       grid-area: army;
-      margin-left: 1rem; }
+      margin-left: 1.5rem; }
 
-footer a {
-  color: #333; }
+#contact {
+  background: #80bdab;
+  color: #fff; }
+  #contact .contact-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    #contact .contact-container h2 {
+      text-align: center;
+      padding: 2rem; }
+    #contact .contact-container .contact-info-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #contact .contact-container .contact-info-container .contact-info {
+        display: flex;
+        align-items: center;
+        text-align: left; }
+        #contact .contact-container .contact-info-container .contact-info:hover i {
+          animation: animationIcon 1s forwards ease; }
+      #contact .contact-container .contact-info-container .contact-info:first-child i {
+        margin-left: 22px; }
+      #contact .contact-container .contact-info-container .contact-info:first-child p {
+        margin-left: 5px; }
+      #contact .contact-container .contact-info-container p {
+        font-size: 1.3rem; }
+      #contact .contact-container .contact-info-container i {
+        margin: 1rem; }
+    #contact .contact-container .social {
+      padding: 1rem; }
+      #contact .contact-container .social a {
+        padding: 0.5rem;
+        transform: translateX(0);
+        transition: color 0.4s ease-out; }
+        #contact .contact-container .social a:hover {
+          color: #fff48f; }
+          #contact .contact-container .social a:hover i {
+            animation: animationIcon 1s forwards ease; }
+
+@keyframes animationIcon {
+  25% {
+    transform: rotate(20deg); }
+  50% {
+    transform: rotate(-20deg); }
+  75% {
+    transform: rotate(20deg); }
+  100% {
+    transform: rotate(0); } }
+
+footer {
+  color: #fff;
+  background: #000;
+  text-align: center;
+  font-size: 0.2rem;
+  line-height: 1; }
+  footer p {
+    padding: 0.3rem 0; }
+  footer a:hover {
+    color: #fff48f; }
