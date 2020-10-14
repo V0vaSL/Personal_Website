@@ -28,11 +28,11 @@
             >
           </div>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Grades</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="Grades.pdf" target="_blank">Grades</a></li>
             <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -62,19 +62,77 @@
           <div class="personal-img">
             <img src="img/circle-cropped.png" alt="vladimir" />
           </div>
+          <p>
+            I'm looking for an entry level, Full-Stack/Back-End developer
+            position.
+          </p>
           <a href="#about">Learn More!</a>
         </div>
       </div>
     </section>
 
     <!-- About -->
-    <section class="about"></section>
+    <section id="about">
+      <h1>About Me</h1>
+      <div class="cards-container">
+        <div id="education" class="card">
+          <i class="fas fa-graduation-cap fa-2x"></i>
+          <p>
+            I'm a Computer Science student at the Open University of Israel. I
+            have four semesters left until graduation. My current GPA is 88. You
+            can find my grades sheet in the navigation bar.
+          </p>
+        </div>
+        <div id="skills" class="card">
+          <i class="fas fa-code fa-2x"></i>
+          <p>
+            I have academic experience with <span class="tech">C</span> ,
+            <span class="tech">C++</span> , <span class="tech">Java</span>,
+            <span class="tech">SQL</span> and <span class="tech">Linux</span>. I
+            have also been studying web development independently. Front-End:
+            <span class="tech">HTML</span> ,
+            <span class="tech">CSS</span>
+            , <span class="tech">JavaScript</span> ,
+            <span class="tech">React</span> . Back-End:
+            <span class="tech">Node.js</span> ,
+            <span class="tech">Express.js</span> ,
+            <span class="tech">MongoDB</span> ,
+            <span class="tech">Mongoose</span> . I'm familiar with using
+            <span class="tech">Git</span> and <span class="tech">GitHub</span> .
+          </p>
+        </div>
+
+        <div id="experience" class="card">
+          <i class="fas fa-user-tie fa-2x"></i>
+          <p>
+            My last job was at Intel Kiryat Gat, where i maintained OHV (Over
+            Head Vehicle) robots for the clean room.
+          </p>
+        </div>
+        <div id="army" class="card">
+          <i class="fas fa-anchor fa-2x"></i>
+          <p>I served in the Israeli Navy for three years as a technician.</p>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
+      <p>
+        Icons by
+        <a
+          href="http://fontawesome.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Font Awesome</a
+        >
+      </p>
       <p class="copyright"></p>
     </footer>
   </body>
 
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- My scripts -->
   <script src="./scripts/bundle.js"></script>
 </html>
