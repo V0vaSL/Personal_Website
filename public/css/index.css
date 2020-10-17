@@ -45,6 +45,11 @@ ul {
   text-emphasis: bold;
   color: #fff48f; }
 
+.visible {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+  visibility: visible !important; }
+
 #home {
   position: relative;
   height: 90vh;
@@ -155,22 +160,26 @@ ul {
     left: 0; }
 
 #about {
-  padding: 4rem 0;
   background: #333; }
   #about h2 {
     color: #80bdab;
     text-align: center;
-    padding: 2rem; }
+    padding: 3rem 0 2rem 0; }
   #about .cards-container {
     display: grid;
-    grid-template-areas: 'education education' 'skills skills' 'experience army'; }
+    grid-template-areas: 'education education' 'skills skills' 'experience army';
+    padding-bottom: 3rem;
+    overflow: hidden; }
     #about .cards-container .card {
       background: rgba(128, 189, 171, 0.9);
       padding: 1rem;
       margin: 0.7rem 0;
       border-radius: 10px;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.5s ease-out; }
       #about .cards-container .card i {
         color: #fff;
         padding: 1rem;
@@ -179,14 +188,18 @@ ul {
         padding: 0.5rem;
         font-size: 1.1rem; }
     #about .cards-container #skills {
-      grid-area: skills; }
+      grid-area: skills;
+      transform: translateX(-500px); }
     #about .cards-container #education {
-      grid-area: education; }
+      grid-area: education;
+      transform: translateX(500px); }
     #about .cards-container #experience {
-      grid-area: experience; }
+      grid-area: experience;
+      transform: translateX(-300px); }
     #about .cards-container #army {
       grid-area: army;
-      margin-left: 1.5rem; }
+      margin-left: 1.5rem;
+      transform: translateX(300px); }
 
 #contact {
   background: #80bdab;
@@ -222,12 +235,9 @@ ul {
       padding: 1rem; }
       #contact .contact-container .social a {
         padding: 0.5rem;
-        transform: translateX(0);
         transition: color 0.4s ease-out; }
         #contact .contact-container .social a:hover {
           color: #fff48f; }
-          #contact .contact-container .social a:hover i {
-            animation: animationIcon 1s forwards ease; }
 
 @keyframes animationIcon {
   25% {
