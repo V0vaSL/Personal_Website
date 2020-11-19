@@ -8,6 +8,11 @@
     <!-- My Styles -->
     <link rel="stylesheet" href="css/index.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width :900px)"
+      href="css/mobile.css"
+    />
     <!-- Font Awsome -->
     <link
       rel="stylesheet"
@@ -31,42 +36,64 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="Grades.pdf" target="_blank">Grades</a></li>
-            <li><a href="#">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+          <!-- Hamburder Menu -->
+          <div class="menu-wrap">
+            <input type="checkbox" class="toggler" />
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="Grades.pdf" target="_blank">Grades</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
 
       <!-- Home content -->
       <div class="home-content">
-        <!-- Terminal -->
-        <div class="terminal">
-          <span class="const const-color"></span><span class="var"></span
-          ><span class="equal"></span><span class="bracket-f"></span
-          ><br />&nbsp;&nbsp;&nbsp;&nbsp;<span class="name-1"></span
-          ><span class="colon-1"></span><span class="value-1"></span
-          ><br />&nbsp;&nbsp;&nbsp;&nbsp;<span class="name-2"></span
-          ><span class="colon-2"></span><span class="value-2"></span
-          ><br />&nbsp;&nbsp;&nbsp;&nbsp;<span class="name-3"></span
-          ><span class="colon-3"></span><span class="value-3"></span
-          ><br />&nbsp;&nbsp;&nbsp;&nbsp;<span class="name-4"></span
-          ><span class="colon-4"></span><span class="value-4"></span><br /><span
-            class="bracket-l"
-          ></span
-          ><br /><br /><br /><span class="func"></span
-          ><span class="open-parentheses"></span><span class="param"></span
-          ><span class="close-parentheses"></span>
-        </div>
-        <!-- content -->
-        <div class="content">
-          <div class="personal-img">
-            <img src="img/circle-cropped.png" alt="vladimir" />
+        <div class="home-content-container">
+          <!-- Terminal -->
+          <div class="terminal">
+            <div class="center-container">
+              <span class="const const-color"></span><span class="var"></span
+              ><span class="equal"></span><span class="bracket-f"></span
+              ><br />&nbsp;&nbsp;&nbsp;&nbsp;<span class="name-1"></span
+              ><span class="colon-1"></span><span class="value-1"></span
+              ><br />&nbsp;&nbsp;&nbsp;&nbsp;<span class="name-2"></span
+              ><span class="colon-2"></span><span class="value-2"></span
+              ><br />&nbsp;&nbsp;&nbsp;&nbsp;<span class="name-3"></span
+              ><span class="colon-3"></span><span class="value-3"></span
+              ><br />&nbsp;&nbsp;&nbsp;&nbsp;<span class="name-4"></span
+              ><span class="colon-4"></span><span class="value-4"></span
+              ><br /><span class="bracket-l"></span><br /><br /><span
+                class="func"
+              ></span
+              ><span class="open-parentheses"></span><span class="param"></span
+              ><span class="close-parentheses"></span>
+            </div>
           </div>
-          <p>
-            I'm looking for an entry level, Full-Stack/Back-End developer
-            position.
-          </p>
-          <a href="#about">Learn More!</a>
+          <!-- content -->
+          <div class="content">
+            <div class="center-container">
+              <div class="personal-img">
+                <img src="img/circle-cropped.png" alt="vladimir" />
+              </div>
+              <p>
+                I'm looking for an entry level, Full-Stack/Back-End developer
+                position.
+              </p>
+              <a href="#about">Learn More!</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -79,8 +106,7 @@
           <i class="fas fa-graduation-cap fa-2x"></i>
           <p>
             I'm a Computer Science student at the Open University of Israel. I
-            have 4 semesters left until graduation. My current GPA is 88. Grades
-            sheet can be found at the navigation bar.
+            have 4 semesters left until graduation. My current GPA is 88.
           </p>
         </div>
         <div id="skills" class="card">
@@ -89,7 +115,7 @@
             I have academic experience with <span class="tech">C</span> ,
             <span class="tech">C++</span> , <span class="tech">Java</span>,
             <span class="tech">SQL</span> and <span class="tech">Linux</span>. I
-            have also been studying web development independently. Front-End:
+            am currently studying web development independently. Front-End:
             <span class="tech">HTML</span> ,
             <span class="tech">CSS</span>
             , <span class="tech">JavaScript</span> ,
@@ -134,9 +160,7 @@
           <a href="https://github.com/V0vaSL?tab=repositories" target="_blank"
             ><i class="fab fa-github fa-2x"></i
           ></a>
-          <a
-            href="https://www.linkedin.com/in/vova-slovo-3a61b2130/"
-            target="_blank"
+          <a href="https://www.linkedin.com/in/vladimir-slovo/" target="_blank"
             ><i class="fab fa-linkedin fa-2x"></i
           ></a>
           <a href="https://twitter.com/SlovoVladimir" target="_blank"
@@ -157,6 +181,7 @@
           >Font Awesome</a
         >
       </p>
+
       <p class="copyright"></p>
     </footer>
   </body>
