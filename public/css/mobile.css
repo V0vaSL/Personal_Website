@@ -146,6 +146,12 @@ h2 {
     .home-content .home-content-container .content .center-container p {
       font-size: 1rem !important; }
 
+#projects .cards-container .card {
+  flex-direction: column; }
+  #projects .cards-container .card img {
+    max-width: 300px;
+    padding: 1rem 3rem; }
+
 #about .cards-container {
   grid-template-areas: 'education' 'skills' 'experience' 'army'; }
   #about .cards-container .card {

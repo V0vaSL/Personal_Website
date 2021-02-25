@@ -26,7 +26,7 @@ h2 {
 ul {
   list-style: none; }
 
-#home .navbar nav, #home .home-content, #about .cards-container, #contact .contact-container {
+#home .navbar nav, #home .home-content, #about .cards-container, #projects .cards-container, #contact .contact-container {
   max-width: 1200px;
   margin: auto;
   padding: 0 2rem;
@@ -211,6 +211,33 @@ ul {
       margin-left: 1.5rem;
       transform: translateX(300px);
       transition: all 0.7s ease-out; }
+
+#projects {
+  background: #222; }
+  #projects h2 {
+    text-align: center;
+    padding: 2rem;
+    color: #fff48f; }
+  #projects .cards-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    overflow: hidden; }
+    #projects .cards-container a:hover {
+      opacity: 0.9; }
+    #projects .cards-container .card {
+      color: #333;
+      background: rgba(255, 244, 143, 0.9);
+      padding: 1rem;
+      margin: 0.7rem 0;
+      border-radius: 10px;
+      display: flex;
+      align-items: center; }
+      #projects .cards-container .card img {
+        max-width: 300px;
+        padding: 0 3rem; }
+      #projects .cards-container .card .info h3 {
+        font-size: 1.4rem; }
 
 #contact {
   background: #222;
