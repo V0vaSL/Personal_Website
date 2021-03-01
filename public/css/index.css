@@ -254,7 +254,7 @@ ul {
       padding: 2rem; }
     #contact .contact-container .contact-info-container {
       display: flex;
-      flex-direction: column;
+      align-items: center;
       justify-content: center; }
       #contact .contact-container .contact-info-container .contact-info {
         display: flex;
@@ -262,10 +262,6 @@ ul {
         text-align: left; }
         #contact .contact-container .contact-info-container .contact-info:hover i {
           animation: animationIcon 1s forwards ease; }
-      #contact .contact-container .contact-info-container .contact-info:first-child i {
-        margin-left: 22px; }
-      #contact .contact-container .contact-info-container .contact-info:first-child p {
-        margin-left: 5px; }
       #contact .contact-container .contact-info-container p {
         font-size: 1.3rem; }
       #contact .contact-container .contact-info-container i {
