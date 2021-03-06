@@ -235,7 +235,8 @@ ul {
       align-items: center; }
       #projects .cards-container .card img {
         max-width: 300px;
-        padding: 0 3rem; }
+        margin: 0 3rem;
+        border-radius: 10px; }
       #projects .cards-container .card .info h3 {
         font-size: 1.4rem; }
 

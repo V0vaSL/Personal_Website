@@ -150,7 +150,7 @@ h2 {
   flex-direction: column; }
   #projects .cards-container .card img {
     max-width: 300px;
-    padding: 1rem 3rem; }
+    margin: 1rem 3rem; }
 
 #about .cards-container {
   grid-template-areas: 'education' 'skills' 'experience' 'army'; }
