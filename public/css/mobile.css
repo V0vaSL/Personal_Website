@@ -6,96 +6,98 @@ h2 {
 
 #home {
   /* Navbar */ }
-  #home .navbar nav ul {
-    display: none; }
-  #home .navbar nav .logo h1 {
-    font-size: 1.1rem; }
-  #home .navbar nav .menu-wrap {
-    display: inline-block;
-    position: fixed;
-    left: 80%;
-    top: 2%;
-    z-index: 1; }
-    #home .navbar nav .menu-wrap .toggler {
-      position: absolute;
-      left: 80%;
-      top: 5%;
-      z-index: 2;
-      cursor: pointer;
-      width: 60px;
-      height: 60px;
-      opacity: 0; }
-    #home .navbar nav .menu-wrap .hamburger {
-      position: absolute;
-      left: 80%;
-      top: 5%;
-      z-index: 1;
-      width: 60px;
-      height: 60px;
-      padding: 1rem;
-      background: transparent;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    #home .navbar nav .menu-wrap .hamburger > div {
-      position: relative;
-      flex: none;
-      width: 100%;
-      height: 2px;
-      background: #fff48f;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.4s ease; }
-    #home .navbar nav .menu-wrap .hamburger > div:before,
-    #home .navbar nav .menu-wrap .hamburger > div:after {
-      content: '';
-      position: absolute;
-      z-index: 1;
-      top: -10px;
-      width: 100%;
-      height: 2px;
-      background: inherit; }
-    #home .navbar nav .menu-wrap .hamburger > div:after {
-      top: 10px; }
-    #home .navbar nav .menu-wrap .toggler:checked + .hamburger > div {
-      transform: rotate(135deg); }
-    #home .navbar nav .menu-wrap .toggler:checked + .hamburger > div:before,
-    #home .navbar nav .menu-wrap .toggler:checked + .hamburger > div:after {
-      top: 0;
-      transform: rotate(90deg); }
-    #home .navbar nav .menu-wrap .toggler:checked:hover + .hamburger > div {
-      transform: rotate(225deg); }
-    #home .navbar nav .menu-wrap .toggler:checked + .hamburger + .menu {
-      animation: menuanimation 0.4s forwards ease; }
-    #home .navbar nav .menu-wrap .menu {
+  #home .navbar {
+    width: 100%; }
+    #home .navbar nav ul {
+      display: none; }
+    #home .navbar nav .logo h1 {
+      font-size: 1.1rem; }
+    #home .navbar nav .menu-wrap {
+      display: inline-block;
       position: fixed;
-      top: 121px;
-      left: 0;
-      width: 100%;
-      height: 40%;
-      visibility: hidden;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      left: 80%;
+      top: 2%;
       z-index: 1; }
-      #home .navbar nav .menu-wrap .menu ul {
-        width: 100%;
+      #home .navbar nav .menu-wrap .toggler {
+        position: absolute;
+        left: 80%;
+        top: 5%;
+        z-index: 2;
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        opacity: 0; }
+      #home .navbar nav .menu-wrap .hamburger {
+        position: absolute;
+        left: 80%;
+        top: 5%;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        padding: 1rem;
+        background: transparent;
         display: flex;
-        flex-direction: column;
         align-items: center;
+        justify-content: center; }
+      #home .navbar nav .menu-wrap .hamburger > div {
+        position: relative;
+        flex: none;
+        width: 100%;
+        height: 2px;
+        background: #fff48f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease; }
+      #home .navbar nav .menu-wrap .hamburger > div:before,
+      #home .navbar nav .menu-wrap .hamburger > div:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background: inherit; }
+      #home .navbar nav .menu-wrap .hamburger > div:after {
+        top: 10px; }
+      #home .navbar nav .menu-wrap .toggler:checked + .hamburger > div {
+        transform: rotate(135deg); }
+      #home .navbar nav .menu-wrap .toggler:checked + .hamburger > div:before,
+      #home .navbar nav .menu-wrap .toggler:checked + .hamburger > div:after {
+        top: 0;
+        transform: rotate(90deg); }
+      #home .navbar nav .menu-wrap .toggler:checked:hover + .hamburger > div {
+        transform: rotate(225deg); }
+      #home .navbar nav .menu-wrap .toggler:checked + .hamburger + .menu {
+        animation: menuanimation 0.4s forwards ease; }
+      #home .navbar nav .menu-wrap .menu {
+        position: fixed;
+        top: 121px;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1; }
+        #home .navbar nav .menu-wrap .menu ul {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background: #333;
+          padding-bottom: 1rem; }
+        #home .navbar nav .menu-wrap .menu ul li {
+          padding: 0.5rem;
+          margin: 0; }
+      #home .navbar nav .menu-wrap .menu > div {
+        position: absolute;
+        top: 0;
+        left: 0;
         background: #333;
-        padding-bottom: 1rem; }
-      #home .navbar nav .menu-wrap .menu ul li {
-        padding: 0.5rem;
-        margin: 0; }
-    #home .navbar nav .menu-wrap .menu > div {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: #333;
-      width: 100%; }
+        width: 100%; }
 
 @keyframes menuanimation {
   0% {
